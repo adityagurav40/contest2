@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    color: grey;
+}
+html{
+    background-color: black;
+    font font-family: Verdana,Geneva,Tahoma, sans-serif;
+}
+body{
+    padding: 20px;
+}
+nav{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+nav > p {
+    color: gray;
+}
+.container{
+    display:flex ;
+    margin-top: 30px;
+    gap: 20px;
+}
+.card-container{
+   display: flex;
+   flex-flow: column wrap;
+   
+    gap: 20px;
+}
+.profile-image{
+    width: 50%;
+    
+}
+.card{
+padding: 30px;
+border: 1px solid grey;
+border-radius: 10px;
+min-height: 200px;
+}
+.item{
+    border: 1px solid grey;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 10px;
+}
+.profile{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+ul{
+    font-weight: 200;
+}
+.bottom-card > div {
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+gap: 10px;
+margin-top: 10px;
+}
+.bottom-card img{
+    width: 30px;
+    height: 30px;
+}
+table{
+    border: 1px solid grey;
+    width: 100%;
+    margin-top: 20px;
+    flex: grow 1;
+    border-radius: 10px ;
+    border-spacing: 0;
+}
+thead{
+    border: 1px solid grey;
+}
+td{
+    padding: 10px;
+    border-right: 1px solid grey;
+}
+thead td{
+border-bottom: 1px solid grey;
+}
+table td:nth-child(3){
+    border-right: none;
+}
+input{
+    width: 20px;
+    height: 20px;
+}
+li{
+    margin-top: 10px;
+}
+tr td:nth-child(1){
+width: 20px;
+}
+tr td:nth-child(2){
+width: 20px;
+}
+@media(max-width :700px) {
+    .container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
